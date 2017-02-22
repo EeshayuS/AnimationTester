@@ -21,26 +21,12 @@ public class MainActivity extends AppCompatActivity {
         plusMinus = (ImageView) findViewById(R.id.plus_minus);
         plusToMinus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_plus_to_minus);
         minusToPlus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_plus);
-        animate();
     }
 
-    public void animate() {
+    public void animate(View view) {
         AnimatedVectorDrawable drawable = plus ? plusToMinus : minusToPlus;
         plusMinus.setImageDrawable(drawable);
         drawable.start();
         plus = !plus;
-        new CountDownTimer(1, 1){
-
-            @Override
-            public void onTick(long l) {
-
-            }
-
-            @Override
-            public void onFinish() {
-                animate();
-            }
-        };
-
     }
 }

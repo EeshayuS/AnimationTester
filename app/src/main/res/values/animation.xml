@@ -4,10 +4,10 @@
     <string name="plus_name">plus</string>
     <string name="minus_name">minus</string>
     <string name="path_plus">M 6,2 L 6,10 M 2,6 L 10,6</string>
-    <string name="path_minus">M 2,6 L 10,6</string>
+    <string name="path_minus">M 2,6 L 10,6 M 2,6 L 10,6</string>
 
-    <string name="width">256dp</string>
-    <string name="height">256dp</string>
+    <dimen name="width">256dp</dimen>
+    <dimen name="height">256dp</dimen>
     <integer name="viewport_width">24</integer>
     <integer name="viewport_height">24</integer>
     <integer name="viewport_center_y">12</integer>
