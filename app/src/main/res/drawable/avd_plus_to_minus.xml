@@ -14,5 +14,4 @@
         android:name="@string/group_plus_minus"
         android:animation="@animator/plus_to_minus_color_fade" />
 
-
 </animated-vector>

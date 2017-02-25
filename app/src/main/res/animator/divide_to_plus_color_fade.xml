@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="tint"
+    android:valueFrom="@color/divide_color"
+    android:valueTo="@color/plus_color"
+    android:duration="@integer/duration"
+    android:interpolator="@android:interpolator/fast_out_slow_in" />

@@ -11,4 +11,8 @@
         android:name="@string/group_minus_multiply"
         android:animation="@animator/rotate" />
 
+    <target
+        android:name="@string/group_minus_multiply"
+        android:animation="@animator/minus_to_multiply_color_fade" />
+
 </animated-vector>
