@@ -2,11 +2,12 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:height="@dimen/width"
     android:width="@dimen/height"
+    android:tint="@color/minus_color"
     android:viewportHeight="@integer/viewport_height"
     android:viewportWidth="@integer/viewport_width">
 
     <group
-        android:name="@string/group_plus_minus"
+        android:name="@string/group_minus_multiply"
         android:pivotX="@integer/viewport_center_x"
         android:pivotY="@integer/viewport_center_y">
 
@@ -15,7 +16,7 @@
             android:pathData="@string/path_minus"
             android:strokeWidth="@integer/stroke_width"
             android:strokeLineCap="square"
-            android:strokeColor="@color/stroke_color"/>
+            android:strokeColor="@android:color/white"/>
 
     </group>
 

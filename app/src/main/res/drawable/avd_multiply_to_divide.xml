@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_multiply">
+
+    <target
+        android:name="@string/multiply_name"
+        android:animation="@animator/multiply_to_divide_translation" />
+
+    <target
+        android:name="@string/group_multiply_divide"
+        android:animation="@animator/rotate" />
+
+</animated-vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_divide">
+
+    <target
+        android:name="@string/divide_name"
+        android:animation="@animator/divide_to_plus_translation" />
+
+    <target
+        android:name="@string/group_divide_plus"
+        android:animation="@animator/rotate" />
+
+</animated-vector>

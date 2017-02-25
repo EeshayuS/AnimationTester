@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animated-vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:drawable="@drawable/ic_plus">
 
     <target
@@ -9,6 +8,11 @@
 
     <target
         android:name="@string/group_plus_minus"
-        android:animation="@animator/rotate_plus_to_minus" />
+        android:animation="@animator/rotate" />
+
+    <target
+        android:name="@string/group_plus_minus"
+        android:animation="@animator/plus_to_minus_color_fade" />
+
 
 </animated-vector>

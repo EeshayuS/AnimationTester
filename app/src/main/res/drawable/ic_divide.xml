@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="@dimen/width"
-    android:height="@dimen/height"
-    android:tint="@color/plus_color"
+    android:height="@dimen/width"
+    android:width="@dimen/height"
+    android:tint="@color/divide_color"
     android:viewportHeight="@integer/viewport_height"
     android:viewportWidth="@integer/viewport_width">
 
     <group
-        android:name="@string/group_plus_minus"
+        android:name="@string/group_divide_plus"
         android:pivotX="@integer/viewport_center_x"
         android:pivotY="@integer/viewport_center_y">
 
         <path
-            android:name="@string/plus_name"
-            android:pathData="@string/path_plus"
-            android:strokeColor="@android:color/white"
-
+            android:name="@string/divide_name"
+            android:pathData="@string/path_divide"
+            android:strokeWidth="2"
             android:strokeLineCap="square"
-            android:strokeWidth="@integer/stroke_width" />
+            android:strokeColor="@android:color/white"/>
 
     </group>
 
 
 </vector>
-
-
-

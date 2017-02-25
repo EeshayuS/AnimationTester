@@ -9,24 +9,84 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView plusMinus;
+    private ImageView animation;
     private AnimatedVectorDrawable plusToMinus;
-    private AnimatedVectorDrawable minusToPlus;
-    private boolean plus = true;
+    private AnimatedVectorDrawable minusToMultiply;
+    private AnimatedVectorDrawable multiplyToDivide;
+    private AnimatedVectorDrawable divideToPlus;
+    private int typeOfAnimation = 0;
+    private AnimatedVectorDrawable drawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        plusMinus = (ImageView) findViewById(R.id.plus_minus);
+        animation = (ImageView) findViewById(R.id.animation);
         plusToMinus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_plus_to_minus);
-        minusToPlus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_plus);
+        minusToMultiply = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_multiply);
+        multiplyToDivide = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_multiply_to_divide);
+        divideToPlus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_divide_to_plus);
+        // animate(); This does nothing. It should do the animation every one second but does not.
     }
 
-    public void animate(View view) {
-        AnimatedVectorDrawable drawable = plus ? plusToMinus : minusToPlus;
-        plusMinus.setImageDrawable(drawable);
+
+    public void animate() {
+        new CountDownTimer(1000, 1000) {
+
+            @Override
+            public void onTick(long l) {
+
+            }
+
+            @Override
+            public void onFinish() {
+                switch (typeOfAnimation) {
+                    case 0:
+                        drawable = plusToMinus;
+                        typeOfAnimation++;
+                        break;
+                    case 1:
+                        drawable = minusToMultiply;
+                        typeOfAnimation++;
+                        break;
+                    case 2:
+                        drawable = multiplyToDivide;
+                        typeOfAnimation++;
+                        break;
+                    case 3:
+                        drawable = divideToPlus;
+                        typeOfAnimation = 0;
+                        break;
+                }
+                animation.setImageDrawable(drawable);
+                drawable.start();
+                animate();
+            }
+        };
+
+    }
+
+    public void onClick (View view) {
+        switch (typeOfAnimation) {
+            case 0:
+                drawable = plusToMinus;
+                typeOfAnimation++;
+                break;
+            case 1:
+                drawable = minusToMultiply;
+                typeOfAnimation++;
+                break;
+            case 2:
+                drawable = multiplyToDivide;
+                typeOfAnimation++;
+                break;
+            case 3:
+                drawable = divideToPlus;
+                typeOfAnimation = 0;
+                break;
+        }
+        animation.setImageDrawable(drawable);
         drawable.start();
-        plus = !plus;
     }
 }
+

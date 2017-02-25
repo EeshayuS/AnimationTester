@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="group_plus_minus">plusMinus</string>
+    <string name="group_minus_multiply">minusMultiply</string>
+    <string name="group_multiply_divide">multiplyDivide</string>
+    <string name="group_divide_plus">dividePlus</string>
     <string name="plus_name">plus</string>
     <string name="minus_name">minus</string>
+    <string name="multiply_name">multiply</string>
+    <string name="divide_name">divide</string>
     <string name="path_plus">M 6,2 L 6,10 M 2,6 L 10,6</string>
     <string name="path_minus">M 2,6 L 10,6 M 2,6 L 10,6</string>
+    <string name="path_multiply">M 2,2 L 10,10 M 2,10 L 10,2</string>
+    <string name="path_divide">M 4,10 L 8,2 M 4,10 L 8,2</string>
 
     <dimen name="width">256dp</dimen>
     <dimen name="height">256dp</dimen>
-    <integer name="viewport_width">24</integer>
-    <integer name="viewport_height">24</integer>
-    <integer name="viewport_center_y">12</integer>
-    <integer name="viewport_center_x">12</integer>
+    <integer name="viewport_width">12</integer>
+    <integer name="viewport_height">12</integer>
+    <integer name="viewport_center_y">6</integer>
+    <integer name="viewport_center_x">6</integer>
     <integer name="stroke_width">2</integer>
     <integer name="duration">450</integer>
-    <color name="stroke_color">#999</color>
+
+    <color name="plus_color">#00ff00</color>
+    <color name="minus_color">#0000ff</color>
+    <color name="multiply_color">#ff0000</color>
+    <color name="divide_color">#8000ff</color>
 
 
 

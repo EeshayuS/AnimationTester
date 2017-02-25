@@ -5,10 +5,10 @@
 
     <target
         android:name="@string/minus_name"
-        android:animation="@animator/minus_to_plus_translation" />
+        android:animation="@animator/minus_to_multiply_translation" />
 
     <target
-        android:name="@string/group_plus_minus"
-        android:animation="@animator/rotate_minus_to_plus" />
+        android:name="@string/group_minus_multiply"
+        android:animation="@animator/rotate" />
 
 </animated-vector>
