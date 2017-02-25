@@ -15,7 +15,6 @@
             android:name="@string/plus_name"
             android:pathData="@string/path_plus"
             android:strokeColor="@android:color/white"
-
             android:strokeLineCap="square"
             android:strokeWidth="@integer/stroke_width" />
 

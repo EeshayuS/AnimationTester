@@ -1,6 +1,9 @@
 package com.noobilator7.animationtester;
 
+import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         minusToMultiply = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_multiply);
         multiplyToDivide = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_multiply_to_divide);
         divideToPlus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_divide_to_plus);
-        // animate(); This does nothing. It should do the animation every one second but does not.
+        animate(); //This does nothing. It should do the animation every one second but does not.
     }
 
 
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 drawable.start();
                 animate();
             }
-        };
+        }.start();
 
     }
 
