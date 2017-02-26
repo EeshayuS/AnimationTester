@@ -12,7 +12,7 @@
         android:animation="@animator/rotate" />
 
     <target
-        android:name="@string/group_divide_plus"
+        android:name="@string/divide_name"
         android:animation="@animator/divide_to_plus_color_fade" />
 
 </animated-vector>

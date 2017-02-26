@@ -12,7 +12,7 @@
         android:animation="@animator/rotate" />
 
     <target
-        android:name="@string/group_multiply_divide"
+        android:name="@string/multiply_name"
         android:animation="@animator/multiply_to_divide_color_fade" />
 
 </animated-vector>

@@ -10,8 +10,8 @@
     <string name="divide_name">divide</string>
     <string name="path_plus">M 6,2 L 6,10 M 2,6 L 10,6</string>
     <string name="path_minus">M 2,6 L 10,6 M 2,6 L 10,6</string>
-    <string name="path_multiply">M 2,2 L 10,10 M 2,10 L 10,2</string>
-    <string name="path_divide">M 4,10 L 8,2 M 4,10 L 8,2</string>
+    <string name="path_multiply">M 3,3 L 9,9 M 3,9 L 9,3</string>
+    <string name="path_divide">M 4,9.5 L 8,2.5 M 4,9.5 L 8,2.5</string>
 
     <dimen name="width">256dp</dimen>
     <dimen name="height">256dp</dimen>

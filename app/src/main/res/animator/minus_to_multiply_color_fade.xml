@@ -4,5 +4,4 @@
     android:propertyName="fillColor"
     android:valueFrom="@color/minus_color"
     android:valueTo="@color/multiply_color"
-    android:duration="@integer/duration"
-    android:interpolator="@android:interpolator/fast_out_slow_in" />
+    android:duration="@integer/duration"/>

@@ -11,7 +11,7 @@
         android:animation="@animator/rotate" />
 
     <target
-        android:name="@string/group_plus_minus"
+        android:name="@string/plus_name"
         android:animation="@animator/plus_to_minus_color_fade" />
 
 </animated-vector>

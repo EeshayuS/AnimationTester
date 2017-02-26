@@ -1,5 +1,7 @@
 package com.noobilator7.animationtester;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -29,13 +31,12 @@ public class MainActivity extends AppCompatActivity {
         minusToMultiply = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_multiply);
         multiplyToDivide = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_multiply_to_divide);
         divideToPlus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_divide_to_plus);
-        animate(); //This does nothing. It should do the animation every one second but does not.
+        animate();
     }
 
 
     public void animate() {
         new CountDownTimer(1000, 1000) {
-
             @Override
             public void onTick(long l) {
 
@@ -68,28 +69,6 @@ public class MainActivity extends AppCompatActivity {
         }.start();
 
     }
-
-    public void onClick (View view) {
-        switch (typeOfAnimation) {
-            case 0:
-                drawable = plusToMinus;
-                typeOfAnimation++;
-                break;
-            case 1:
-                drawable = minusToMultiply;
-                typeOfAnimation++;
-                break;
-            case 2:
-                drawable = multiplyToDivide;
-                typeOfAnimation++;
-                break;
-            case 3:
-                drawable = divideToPlus;
-                typeOfAnimation = 0;
-                break;
-        }
-        animation.setImageDrawable(drawable);
-        drawable.start();
-    }
 }
+
 
