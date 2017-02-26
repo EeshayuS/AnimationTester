@@ -14,11 +14,9 @@
             android:name="@string/multiply_name"
             android:pathData="@string/path_multiply"
             android:strokeColor="@android:color/white"
-
             android:strokeLineCap="square"
             android:strokeWidth="@integer/stroke_width" />
 
     </group>
-
 
 </vector>

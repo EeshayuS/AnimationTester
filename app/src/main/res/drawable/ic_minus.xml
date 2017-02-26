@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="@dimen/width"
     android:width="@dimen/height"
+    android:height="@dimen/width"
     android:viewportHeight="@integer/viewport_height"
     android:viewportWidth="@integer/viewport_width">
 
@@ -13,11 +13,10 @@
         <path
             android:name="@string/minus_name"
             android:pathData="@string/path_minus"
-            android:strokeWidth="@integer/stroke_width"
+            android:strokeColor="@android:color/white"
             android:strokeLineCap="square"
-            android:strokeColor="@android:color/white"/>
+            android:strokeWidth="@integer/stroke_width" />
 
     </group>
-
 
 </vector>

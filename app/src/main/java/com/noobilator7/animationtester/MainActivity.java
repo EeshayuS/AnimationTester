@@ -1,11 +1,6 @@
 package com.noobilator7.animationtester;
 
-import android.animation.ArgbEvaluator;
-import android.animation.ValueAnimator;
-import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void animate() {
+
         new CountDownTimer(1000, 1000) {
+
             @Override
             public void onTick(long l) {
 
@@ -69,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 drawable.start();
                 animate();
             }
+
         }.start();
 
     }

@@ -20,7 +20,7 @@
     <integer name="viewport_center_y">6</integer>
     <integer name="viewport_center_x">6</integer>
     <integer name="stroke_width">2</integer>
-    <integer name="duration">450</integer>
+    <integer name="duration">1000</integer>
 
     <color name="plus_color">#00ff00</color>
     <color name="minus_color">#0000ff</color>
