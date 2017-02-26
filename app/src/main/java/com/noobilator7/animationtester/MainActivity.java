@@ -15,6 +15,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView animation;
+    private ImageView picture;
     private AnimatedVectorDrawable plusToMinus;
     private AnimatedVectorDrawable minusToMultiply;
     private AnimatedVectorDrawable multiplyToDivide;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         animation = (ImageView) findViewById(R.id.animation);
+        picture = (ImageView) findViewById(R.id.picture);
         plusToMinus = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_plus_to_minus);
         minusToMultiply = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_minus_to_multiply);
         multiplyToDivide = (AnimatedVectorDrawable) getDrawable(R.drawable.avd_multiply_to_divide);
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
                 animation.setImageDrawable(drawable);
+                picture.setVisibility(View.GONE);
                 drawable.start();
                 animate();
             }
