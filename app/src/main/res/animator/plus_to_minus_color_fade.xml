@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <objectAnimator
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:propertyName="fillColor"
-    android:interpolator="@android:interpolator/decelerate_cubic"
-    android:valueType="intType"
+    android:propertyName="strokeColor"
     android:valueFrom="@color/plus_color"
     android:valueTo="@color/minus_color"
     android:duration="@integer/duration"/>

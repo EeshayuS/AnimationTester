@@ -2,7 +2,7 @@
 
 <objectAnimator
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:propertyName="fillColor"
+    android:propertyName="strokeColor"
     android:valueFrom="@color/divide_color"
     android:valueTo="@color/plus_color"
     android:duration="@integer/duration" />
